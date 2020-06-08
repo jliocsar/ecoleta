@@ -25,9 +25,6 @@ Os <em>scripts</em> NPM utilizados na aplicação:
  
 
     npm start
-- Executar <em>script</em> do <em>database</em>:
-
-    npm run database
 
 ## Licença 📖
 Este repositório está licenciado pela MIT LICENSE.
