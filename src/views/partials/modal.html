@@ -1,0 +1,26 @@
+{# Modal #}
+<div id="modal" class="hidden">
+  {# Modal content #}
+  <div class="content">
+    {# Modal header #}
+    <div class="header">
+      <h1>Pontos de Coleta</h1>
+      <a href="#">Fechar</a>
+    </div>
+    {# Modal form #}
+    <form action="/search">
+      <label for="search">Cidade</label>
+      <div class="search field">
+        <input 
+          type="text" 
+          name="search"
+          placeholder="Digite a sua cidade" 
+        />
+        {# Modal submit button #}
+        <button>
+          <img src="./assets/svg/search.svg" alt="Buscar" />
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

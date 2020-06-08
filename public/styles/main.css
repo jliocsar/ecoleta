@@ -1,0 +1,50 @@
+/*
+  Normalize/Default values
+*/
+:root {
+  --input-color: #6c6c80;
+  --bg-color: #f0f0f5;
+  --title-color: #322153;
+  --highlight-color: #e1faec;
+  --primary-color: #34cb79;
+  --dark-primary-color: #2fb86e;
+  --modal-color: #0E0A14ef;
+  --button-transition: background 400ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--title-color);
+}
+
+a,
+button,
+input,
+select {
+  outline-color: var(--dark-primary-color);
+  border: 0;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,110 @@
+/*
+  Laptop @media queries
+*/
+@media (max-width: 900px) {
+  /* Page Home styles */ 
+  #page-home {
+    background-position-x: 70vw;
+  }
+
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #page-home header a + a {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #page-home main a {
+    margin: 28px auto;
+  }
+
+  #page-home #modal {
+    padding: 0 16px;
+  }
+
+  #page-home main h1 {
+    font-size: 48px;
+  }
+
+  #page-home main p {
+    font-size: 20px;
+  }
+
+  /* Page Search Results styles */
+  #page-search-results main .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Page Create Point styles */
+  #page-create-point .items-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Page Home styles */
+  #page-home main h1 {
+    font-size: 40px;
+  }
+
+  #page-home main p {
+    font-size: 18px;
+  }
+
+  /* Page Search Results styles */
+  body::after {
+    top: 100%;
+  }
+
+  #page-search-results main .cards {
+    grid-template-columns: 100%;
+  }
+
+  /* Page Create Point styles */
+  #page-create-point form .field-group {
+    flex-direction: column;
+  }
+
+  #page-create-point form .field-group .field + .field {
+    margin-left: 0;
+  }
+  
+  #page-create-point form button {
+    width: 100%;
+  }
+}
+
+/*
+  Small Mobiles @media queries
+*/
+@media (max-width: 588px) {
+  /* Page Create Point styles */
+  #page-create-point .items-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+/*
+  Large Screens @media queries
+*/
+@media (min-width: 1700px) {
+  /* Page Home styles */
+  #page-home {
+    background-position-x: 50vw;
+  }
+}
+
+/*
+  Tablets @media queries
+*/
+@media (max-height: 760px) {
+  /* Page Home styles */
+  #page-home {
+    background-position-y: 200px;
+  }
+}

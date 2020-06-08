@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{# Defining body ID #}
+{% set pageId = "page-search-results" %}
+
+{# Page title block #}
+{% block title %}
+  <title>Criar um ponto de coleta</title>
+{% endblock title %}
+
+{# Styles block #}
+{% block styles %}
+  <link href="./styles/search-results.css" rel="stylesheet" />
+{% endblock styles %}
+
+{% block content %}
+  {% include "partials/page-header.html" %}
+  {# Search results #}
+  <main>
+    {# Length condition #}
+    {% if total %}
+      {# Search results counter #}
+      <h4>
+        <strong>{{ total }} pontos</strong> encontrados
+      </h4>
+      {# Results grid #}
+      <div class="cards">
+        {% for place in places %}
+          <div class="card">
+          <img src="{{ place.image }}" alt="{{ place.name }}" />
+          <h1>{{ place.name }}</h1>
+          <h3>{{ place.items }}</h3>
+          <p>
+            {{ place.city }}, {{ place.state }}
+            <br />
+            {{ place.address }}
+            <br />
+            {{ place.address2 }}
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <h4>
+        <strong>Nenhum</strong> ponto encontrado
+      </h4>
+    {% endif %}
+  </main>
+{% endblock content %}

@@ -1,0 +1,14 @@
+{
+    "name": "Ecoleta",
+    "short_name": "Ecoleta",
+    "icons": [
+        {
+            "src": "android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#322153",
+    "background_color": "#322153",
+    "display": "standalone"
+}

@@ -1,0 +1,94 @@
+/*
+  Global Modal styles
+*/
+#modal {
+  background-color: var(--modal-color);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms ease;
+}
+
+#modal.hidden {
+  display: none;
+}
+
+#modal .content {
+  color: white;
+  width: 420px;
+}
+
+#modal .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+#modal .header a {
+  background: url('../assets/svg/x.svg');
+  width: 20px;
+  height: 20px;
+  display: flex;
+  font-size: 0.01px;
+}
+
+#modal .header h1 {
+  color: white;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+#modal form label {
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+#modal form .field {
+  display: flex;
+}
+
+#modal form input {
+  flex: 1;
+  background: var(--bg-color);
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6c6c80;
+  border-radius: 8px 0 0 8px;
+}
+
+#modal form button {
+  background: var(--primary-color);
+  width: 72px;
+  height: 72px;
+  border-radius: 0 8px 8px 0;
+}
+
+#modal form button img {
+  width: 26px;
+  height: 26px;
+}
+
+#modal form button:hover {
+  background: var(--dark-primary-color);
+  transition: var(--button-transition);
+}
+
+/*
+  Create Point Modal styles
+*/
+#modal.point .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal.point .content h1 {
+  color: white;
+  margin-top: 32px;
+}

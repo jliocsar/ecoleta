@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{# Defining body ID #}
+{% set pageId = "page-not-found" %}
+
+{# Styles block #}
+{% block styles %}
+  <link href="./styles/not-found.css" rel="stylesheet" />
+{% endblock styles %}
+
+{# Content block #}
+{% block content %}
+  {# Home Page content #}
+  <div class="content">
+    {% include "partials/page-header.html" %}
+    {# Error page main #}
+    <main>
+      <h1>{{ title }}</h1>
+      {# Main paragraph #}
+      <p>{{ description }}</p>
+    </main>
+  </div>
+{% endblock content %}

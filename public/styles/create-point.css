@@ -1,0 +1,162 @@
+/*
+  Create Point Page styles
+*/
+#page-create-point {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#page-create-point header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+}
+
+#page-create-point header a {
+  color: var(--title-color);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+#page-create-point header a span {
+  background: url('../assets/svg/arrow-left.svg');
+  display: flex;
+  margin-right: 16px;
+  width: 20px;
+  height: 24px;
+}
+
+#page-create-point form {
+  background: white;
+  padding: 64px;
+  margin: 80px auto;
+  border-radius: 8px;
+  max-width: 730px;
+}
+
+#page-create-point form h1 {
+  font-size: 36px;
+}
+
+#page-create-point form fieldset {
+  margin-top: 64px;
+  border: 0;
+}
+
+#page-create-point form legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#page-create-point form legend h2 {
+  font-size: 24px;
+}
+
+#page-create-point form legend span {
+  color: var(--title-color);
+  font-size: 14px;
+}
+
+#page-create-point form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  flex: 1;
+}
+
+#page-create-point form .field-group {
+  display: flex;
+}
+
+#page-create-point form input,
+#page-create-point form select {
+  background: var(--bg-color);
+  padding: 16px 24px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+#page-create-point form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#page-create-point form input:focus,
+#page-create-point form select:focus {
+  background: var(--highlight-color);
+}
+
+#page-create-point form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+#page-create-point form .field-group .field + .field {
+  margin-left: 24px;
+}
+
+#page-create-point form button {
+  background: var(--primary-color);
+  transition: var(--button-transition);
+  width: 260px;
+  height: 56px;
+  color: white;
+  border: 0;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+#page-create-point form button:hover {
+  background: var(--dark-primary-color);
+}
+
+/* 
+  Collect Items Grid styles
+*/
+#page-create-point .items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+#page-create-point .items-grid li {
+  background: var(--bg-color);
+  border: 2px solid var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 8px;
+  height: 180px;
+  padding: 32px 24px 16px;
+  cursor: pointer;
+}
+
+#page-create-point .items-grid li span {
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-top: 12px;
+}
+
+#page-create-point .items-grid li.selected {
+  background: var(--highlight-color);
+  border: 2px solid var(--primary-color);
+}
+
+#page-create-point .items-grid li img,
+#page-create-point .items-grid li span {
+  pointer-events: none;
+}
